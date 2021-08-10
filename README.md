@@ -1,4 +1,4 @@
-# Habitude
+# Monica & Tom LAP 3 Code Challenge
 
 [Live site]()
 
