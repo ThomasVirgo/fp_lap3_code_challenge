@@ -13,7 +13,7 @@ const Repos = () => {
         setLoading(false);
     }, [])
 
-    //map each repository to a card component.
+    //map each repository to a card component. Need to import.
     const repoCards = repoInfo.map((item, i) => <p key={i}>{item.name}</p>); 
 
     return (
