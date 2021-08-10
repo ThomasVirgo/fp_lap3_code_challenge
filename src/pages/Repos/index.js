@@ -7,16 +7,19 @@ const Repos = () => {
     const [repoInfo, setRepoInfo] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(()=>{
-        //make a request to github api and get repos info
-        //set repoInfo to the data recieved
-        //set loading to false
+    useEffect( async ()=>{
+        const { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
+        setRepoInfo(data);
+        setLoading(false);
     }, [])
 
-    //map each repository to a card component. 
+    //map each repository to a card component.
+    const repoCards = repoInfo.map((item, i) => <p key={i}>{item.name}</p>); 
 
     return (
-        <h1>Repos Page for {username}</h1>
+        <>
+        {loading ? <p>loading...</p> : repoCards}
+        </>
     )
 }
 
