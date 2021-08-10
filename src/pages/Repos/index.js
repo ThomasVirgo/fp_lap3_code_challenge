@@ -1,6 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { RepoCard } from '../../components'
+import './style.css'
 
 const Repos = () => {
     const { username } = useParams();
@@ -13,13 +15,18 @@ const Repos = () => {
         setLoading(false);
     }, [])
 
-    //map each repository to a card component.
-    const repoCards = repoInfo.map((item, i) => <p key={i}>{item.name}</p>); 
+    function addModal(data){
+        console.log('clicked');
+        console.log(data);
+    }
+
+    //map each repository to a card component. Need to import.
+    const repoCards = repoInfo.map((item, i) => <div onClick={()=>addModal(item)} key={i}><RepoCard repo={item} /></div>); 
 
     return (
-        <>
+        <div className='repos-container'>
         {loading ? <p>loading...</p> : repoCards}
-        </>
+        </div>
     )
 }
 
