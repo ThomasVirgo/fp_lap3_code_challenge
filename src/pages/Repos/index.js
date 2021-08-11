@@ -31,8 +31,9 @@ const Repos = () => {
 
     return (
         <div className='repos-container'>
-        {loading ? <p>loading...</p> : repoCards}
-        {modal ?  <RepoModal repo={modalData} show={closeModal}/>:<></>}
+            <h1>Hi {username}! </h1>
+            {loading ? <p>loading...</p> : repoCards}
+            {modal ?  <RepoModal repo={modalData} show={closeModal}/>:<></>}
         </div>
     )
 }
