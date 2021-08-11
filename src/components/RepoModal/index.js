@@ -41,22 +41,21 @@ const RepoModal = ({repo,show}) => {
 
      
     const body = (
-        <div className={classes.paper}>
-            <Typography variant="h5" component="h2">{repo.name.replaceAll(/_|-/gi,' ')}</Typography>
-            <Typography  component="p">{repo.description}</Typography>
-            <Button variant="contained" color="primary" href={repo.html_url} target='_blank'>
+        <div  className={classes.paper}>
+            <Typography role='Title' variant="h5" component="h2">{repo.name.replaceAll(/_|-/gi,' ')}</Typography>
+            <Typography role='Description' component="p">{repo.description}</Typography>
+            <Button role='link' variant="contained" color="primary" href={repo.html_url} target='_blank'>
                 <GitHubIcon className={classes.giticon}/>  See in github 
             </Button>
         </div>
     );
 
     return (
-        <Modal
+        <Modal 
+            role='Modal'
             open={open}
             onClose={handleClose}
             className={classes.modal}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
         >
             {body}
         </Modal>
