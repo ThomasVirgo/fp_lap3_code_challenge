@@ -1,5 +1,22 @@
 .repos-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin-left: 10vw;
+    width: 50vw;
+}
+
+.card-container {
+    margin-bottom: 30px;
+}
+
+.card-container:hover {
+    box-shadow: rgba(36, 131, 221, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.header {
+    display: flex;
+}
+
+.header form{
+    margin-left: 30px;
 }
