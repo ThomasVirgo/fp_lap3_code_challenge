@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-      maxWidth: 275,
+      width: '100%',
       cursor: "pointer",
       
     },
@@ -29,11 +29,11 @@ const RepoCard = ({repo}) => {
                     <Typography color="textSecondary" gutterBottom>
                         {repo.owner.login}
                     </Typography >
-                    <Typography variant="h5" component="h2">
+                    <Typography variant="h6" component="h3">
                         {repo.name}
                     </Typography>
                 </div>
-                <Typography className={classes.language} component="p">
+                <Typography className={classes.language} variant="overline" component="p">
                         {repo.language}
                 </Typography>
             </CardContent>
