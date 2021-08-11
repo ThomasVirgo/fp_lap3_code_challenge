@@ -2,57 +2,40 @@
 
 [Live site]()
 
-
 ## Installation & Usage
 
 ### Installation
+
+- Clone repository
+- cd into repository folder
+- Run `npm install` and wait for installation
 
 ### Usage
 
-## Installation & Usage
+- Run `npm run dev` and navigate to [local server](http://localhost:8080/)
+- Input your GitHub username and press submit
+- View your repositories and click on one to see further info/navigate to github repo
 
-### Installation
-
-### Usage - provided scripts and intended use
 
 ## Technologies
 
 <details>
-  <summary><b>Client</b></summary>
+  <summary><b>Client Code</b></summary>
   
-  - 1
-  - 2
-  - 3
+  - React
+  - React-router
+  - GitHub API
 
 </details>
 
 <details>
-  <summary><b>Server</b></summary>
+  <summary><b>Styling</b></summary>
 
-- 1
-- 2
-- 3
-
-</details>
-
-<details>
-  <summary><b>Database</b></summary>
-
-- 1
+- Material-UI
+- Material-UI Icons
 
 </details>
-
-
-## Changelog
-
-[changelog](./changelog.md)
-
-## Bugs
-
-- 
 
 ## Future Features
 
--
--
--
+- include further repo info such as commits or fork numbers
