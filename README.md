@@ -24,6 +24,7 @@
   
   - React
   - React-router
+  - GitHub API
 
 </details>
 
