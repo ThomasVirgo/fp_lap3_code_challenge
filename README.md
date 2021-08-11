@@ -12,7 +12,7 @@
 
 ### Usage
 
-- Run `npm run dev` and navigate to local server [Live site](http://localhost:8080/)
+- Run `npm run dev` and navigate to [local server](http://localhost:8080/)
 - Input your GitHub username and press submit
 - View your repositories and click on one to see further info/navigate to github repo
 
