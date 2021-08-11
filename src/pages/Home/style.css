@@ -1,0 +1,12 @@
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    margin-top: 40vh;
+}
+
+.input{
+    margin-bottom: 30px !important;
+}

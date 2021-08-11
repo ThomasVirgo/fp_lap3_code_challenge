@@ -1,58 +1,62 @@
-# Habitude
+# Monica & Tom LAP 3 Code Challenge
 
-[Live site]()
+## Repo Getter
 
+This website allow you to check the public repositories of any GitHub user.
+
+[Live site](https://repo-getter.netlify.app/)
+
+![repo-getter usage](repo-getter.gif)
 
 ## Installation & Usage
 
 ### Installation
+
+- Clone repository
+- cd into repository folder
+- Run `npm install` and wait for installation
 
 ### Usage
 
-## Installation & Usage
+- Run `npm run dev` and navigate to [local server](http://localhost:8080/)
+- Input your GitHub username and press submit
+- View your repositories and click on one to see further info/navigate to github repo
 
-### Installation
-
-### Usage - provided scripts and intended use
 
 ## Technologies
 
 <details>
-  <summary><b>Client</b></summary>
+  <summary><b>Client Code</b></summary>
   
-  - 1
-  - 2
-  - 3
+  - [React](https://www.npmjs.com/package/react)
+  - [React-router](https://www.npmjs.com/package/react-router)
+  - [GitHub API](https://docs.github.com/en/rest)
 
 </details>
 
 <details>
-  <summary><b>Server</b></summary>
+  <summary><b>Styling</b></summary>
 
-- 1
-- 2
-- 3
-
-</details>
-
-<details>
-  <summary><b>Database</b></summary>
-
-- 1
+- [Material-UI](https://material-ui.com/)
+- [Material-UI Icons](https://material-ui.com/components/icons/#material-icons)
 
 </details>
-
 
 ## Changelog
 
-[changelog](./changelog.md)
+Find the full changelog [here](changelog.md)
 
 ## Bugs
+- [] It allows you to search by url wrong users and stays forever in loading.
+- [] Only works for users with less than 30 repositories.
+- [] Doesn't show collaborations
 
-- 
 
 ## Future Features
 
--
--
--
+- include further repo info such as commits or fork numbers
+- get more than 80% coverage in tests 
+
+## Licence
+
+[MIT Licence](https://opensource.org/licenses/mit-license.php)
