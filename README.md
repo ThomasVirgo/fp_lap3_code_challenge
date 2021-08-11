@@ -46,6 +46,12 @@ This website allow you to check the public repositories of any GitHub user.
 
 Find the full changelog [here](changelog.md)
 
+## Bugs
+- [] It allows you to search by url wrong users and stays forever in loading.
+- [] Only works for users with less than 30 repositories.
+- [] Doesn't show collaborations
+
+
 ## Future Features
 
 - include further repo info such as commits or fork numbers
