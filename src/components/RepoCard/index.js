@@ -11,17 +11,20 @@ const useStyles = makeStyles({
       
     },
     info: {
-        display: 'flex'
+        width: '95%',
+        display: 'flex',
+        justifyContent: 'space-between'
     },
     language: {
-        alignSelf: 'center',
-        height:'100%'
+        alignSelf: 'flex-end',
+        justifySelf:'end',
+        height:'100%',
     }
 
 });  
-
 const RepoCard = ({repo}) => {
     const classes = useStyles();
+    
     return (
         <Card  className={classes.root} >
             <CardContent className={classes.info}>
@@ -30,12 +33,12 @@ const RepoCard = ({repo}) => {
                         {repo.owner.login}
                     </Typography >
                     <Typography variant="h6" component="h3">
-                        {repo.name}
+                        {repo.name.replaceAll(/_|-/gi,' ')}
                     </Typography>
                 </div>
-                <Typography className={classes.language} variant="overline" component="p">
+                <Typography className={classes.language}  variant="overline" component="p">
                         {repo.language}
-                </Typography>
+                </Typography>                
             </CardContent>
         </Card>        
     );
