@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { RepoCard, RepoModal, SearchForm } from '../../components'
+import { RepoCard, RepoModal, SearchForm, BackButton } from '../../components'
 import './style.css'
 
 const Repos = () => {
@@ -40,7 +40,8 @@ const Repos = () => {
     return (
         <div className='repos-container'>
             <div className='header'>
-                <h1>Hi {username}! </h1>
+                <BackButton />
+                <h1>Welcome {username}! </h1>
                 <SearchForm handleSearch = {handleSearch}/>
             </div>
             {loading ? <p>loading...</p> : repoCards}
