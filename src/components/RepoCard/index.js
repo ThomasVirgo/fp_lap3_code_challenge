@@ -26,17 +26,17 @@ const RepoCard = ({repo}) => {
     const classes = useStyles();
     
     return (
-        <Card  className={classes.root} >
+        <Card role='card' className={classes.root} >
             <CardContent className={classes.info}>
                 <div>
-                    <Typography color="textSecondary" gutterBottom>
+                    <Typography role='Username' color="textSecondary" gutterBottom>
                         {repo.owner.login}
                     </Typography >
-                    <Typography variant="h6" component="h3">
+                    <Typography role='Title' variant="h6" component="h3">
                         {repo.name.replaceAll(/_|-/gi,' ')}
                     </Typography>
                 </div>
-                <Typography className={classes.language}  variant="overline" component="p">
+                <Typography role='MainTecnology' className={classes.language}  variant="overline" component="p">
                         {repo.language}
                 </Typography>                
             </CardContent>
