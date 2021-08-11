@@ -1,6 +1,12 @@
 # Monica & Tom LAP 3 Code Challenge
 
-[Live site]()
+## Repo Getter
+
+This website alow you to check the public repositories of any github user.
+
+[Live site](https://repo-getter.netlify.app/)
+
+![repo-getter usage](repo-getter.gif)
 
 ## Installation & Usage
 
@@ -22,20 +28,29 @@
 <details>
   <summary><b>Client Code</b></summary>
   
-  - React
-  - React-router
-  - GitHub API
+  - [React](https://www.npmjs.com/package/react)
+  - [React-router](https://www.npmjs.com/package/react-router)
+  - [GitHub API](https://docs.github.com/en/rest)
 
 </details>
 
 <details>
   <summary><b>Styling</b></summary>
 
-- Material-UI
-- Material-UI Icons
+- [Material-UI](https://material-ui.com/)
+- [Material-UI Icons](https://material-ui.com/components/icons/#material-icons)
 
 </details>
+
+## Changelog
+
+Find the full changelog [here](changelog.md)
 
 ## Future Features
 
 - include further repo info such as commits or fork numbers
+- get more than 80% coverage in tests 
+
+## Licence
+
+[MIT Licence](https://opensource.org/licenses/mit-license.php)
