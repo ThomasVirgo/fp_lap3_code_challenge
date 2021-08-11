@@ -27,7 +27,7 @@ const Repos = () => {
     }
     
     //map each repository to a card component. Need to import.
-    const repoCards = repoInfo.map((item, i) => <div onClick={()=>openModal(item)} key={i}><RepoCard repo={item} /></div>); 
+    const repoCards = repoInfo.map((item, i) => <div className = 'card-container' onClick={()=>openModal(item)} key={i}><RepoCard repo={item} /></div>); 
 
     return (
         <div className='repos-container'>
