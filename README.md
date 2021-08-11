@@ -2,7 +2,7 @@
 
 ## Repo Getter
 
-This website alow you to check the public repositories of any github user.
+This website allow you to check the public repositories of any GitHub user.
 
 [Live site](https://repo-getter.netlify.app/)
 
